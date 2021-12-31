@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3fiVKNb2FUiYlJ-A6tjwnJuxU7ML35vbJkg&usqp=CAU"/>
+    
+    <!-- fontawesome link  -->
+    <script src="https://kit.fontawesome.com/495cdf9e7a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>  
+        
+        <!-- Navigation and Logo  -->
+
+        <div class="nav-bar-and-logo">
+            <div class="menu">
+                <div class="menu-btn">
+                    <div class="firstLine line"></div>
+                    <div class="secondLine line"></div>
+                    <div class="thirdLine line"></div>
+                </div>
+            </div>
+            <div class="logo-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3fiVKNb2FUiYlJ-A6tjwnJuxU7ML35vbJkg&usqp=CAU" alt="logo">
+            </div>
+        </div>
+
+        <!-- dark and light mode  -->
+
+        <div class="mode">
+            <input type="checkbox" id="check" class="check" />
+            <label for="check" class="dark-mode">
+                <i class="fas fa-moon dark"></i>
+                <i class="fas fa-sun light"></i>
+                <i class="fas fa-circle circle"></i>
+            </label>
+        </div>
+    </header>
+
+    <!-- humbager menu  -->
+
+    <div class="show-menu">
+        <ul>
+            <li>
+                <a href="#">home</a>
+            </li>
+            <li>
+                <a href="#tvshow">tvshow</a>
+            </li>
+            <li>
+                <a href="#">movies</a>
+            </li>
+            <li>
+                <a href="#contact">contact us</a>
+            </li>
+            <li>
+                <a href="#">help</a>
+            </li>
+        </ul>
+    </div>
+
+    <section>
+
+        <!-- search bar -->
+
+        <div class="search-bar">
+            <input type="text" class="search-text" placeholder="search movie">
+            <button type="submit" class="search-icon">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <!-- suggest video  -->
+
+        <h3>Suggest For You</h3>
+        <div class="slider">
+            <div class="movies">
+            </div>
+            <div class="slider-btn">
+                <button class="left"><i class="fas fa-chevron-left"></i></button>
+                <button class="right"><i class="fas fa-chevron-right"></i></button>
+
+            </div>
+        </div>
+
+        <!-- show movie detail  -->
+
+        <div class="movie-detail">        
+        </div>
+
+        <!-- play movie  -->
+
+        <div class="movie-show">         
+        </div>
+
+    </section>
+
+    <footer>
+
+        <!-- ost songs  -->
+
+        <h3 id="tvshow">Ost Songs</h3>
+        <div class="allPhoto">        
+        </div>
+
+    </footer>
+
+    <!-- call action  -->
+
+    <div id="contact" class="call-action">
+        <div class="adjust-display">
+            <h1>get in touch</h1>
+            <p>Drop us a line or visit us for a cup of coffee!</p>
+            <p>We glad bo see our friends!</p>
+
+            <div class="contact-us">
+
+                <!-- sent message section  -->
+
+                <div class="send-request">
+                    <h3>Send your Suggest</h3>
+
+                    <form action="mailto:nmwenoon22@gmail.com" method="post" enctype="text/plain">
+                        <Label>Name:</Label>
+                        <input type="text" name="name" placeholder="Your Name..." autocomplete="off">
+                        
+                        <label for="phone-number">Phone:</label>
+                        <input type="text" id="phone-number" name="phone-number" placeholder="Phone Number..." autocomplete="off">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" value="" id="email" placeholder="Eamil..." autocomplete="off">
+                        
+                        <label for="message">Enter your message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                        
+                        <button class="btn btn-outline-dark send-button">Send</button>
+                    </form>
+                    
+                </div>
+
+                <!-- contact Infromation  -->
+
+                <div class="contact-infromatin">
+                    <h3>Contact Infromation</h3>
+                    <div>
+                        <span>Address:</span>
+                        <span>No-102, Taunggyi, Shan-State Myanmar</span>
+                    </div>
+
+                    <div>
+                        <label>Phone:</label>
+                        <a href="tel:+959767331403">+959767331403</a>
+                    </div>
+                    
+                    <div>
+                        <label>Email:</label>
+                        <a href="mailto:nmwenoon22@gmail.com">nmwenoon22@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-icon">
+                        <a href="https://www.facebook.com/nang.mywe.94" class="icon" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://github.com/dulice" class="icon" target="_blank"><i class="fa fa-github" class="icon"></i></a>
+                        <a href="https://linkedin.com/in/nan-mywe-noon-40b0b81b7" class="icon" target="_blank"> <i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- go to top button  -->
+
+    <div class="top">
+        <a href="#">go to top</a>
+    </div>
+
+    <!-- add script link  -->
+
+    <script src="script.js"></script>
+    <script src="api.js"></script>
+    
+</body>
+</html>
